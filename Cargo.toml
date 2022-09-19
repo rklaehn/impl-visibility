@@ -1,8 +1,11 @@
 [package]
-name = "public-impl"
+name = "impl-visibility"
 version = "0.1.0"
 authors = ["rklaehn@protonmail.com"]
 edition = "2021"
+license = "MIT OR Apache-2.0"
+keywords = ["macro", "visibility"]
+description = "adapt visibility of an impl section"
 
 [lib]
 proc-macro = true

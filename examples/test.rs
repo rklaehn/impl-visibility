@@ -1,12 +1,10 @@
-use public_impl::public_impl;
-
 struct Foo;
 
 trait Bar {
     fn baz(&self);
 }
 
-#[public_impl]
+#[impl_visibility::make(pub)]
 impl Foo {
     fn test() {}
 

@@ -2,6 +2,9 @@ use proc_macro::*;
 use syn::{ImplItem, Visibility, parse_macro_input};
 use quote::ToTokens;
 
+/// **Override**s the visibility of the annotated impl section with the one
+/// given as an argument.
+/// ```
 #[proc_macro_attribute]
 pub fn make(attrs: TokenStream, input: TokenStream) -> TokenStream {
     let vis: Visibility = parse_macro_input!(attrs);
